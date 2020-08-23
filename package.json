@@ -1,12 +1,12 @@
 {
-  "name": "cycle-node-http-server",
+  "name": "@zinsani/cycle-node-http-server",
   "version": "2.0.0",
   "description": "A Node HTTP(S) driver for Cycle.js",
   "main": "dist/index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --require babel-register -w",
-    "build": "babel src -d dist",
-    "watch": "babel src -d dist -w"
+    "build": "tsc",
+    "watch": "tsc -w"
   },
   "keywords": [
     "node",
@@ -15,22 +15,23 @@
     "https"
   ],
   "dependencies": {
-    "xstream": "^10.7.0"
+    "xstream": "^11.12.0"
   },
   "devDependencies": {
-    "@cycle/http": "^13.3.0",
-    "@cycle/run": "^3.1.0",
+    "@cycle/http": "^15.4.0",
+    "@cycle/run": "^5.4.0",
     "babel-cli": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.5.1",
     "babel-register": "^6.24.1",
-    "body-parser": "^1.17.2",
+    "body-parser": "^1.19.0",
     "lodash": "^4.17.4",
     "mocha": "^3.4.2",
     "snabbdom-jsx": "^0.3.1",
     "snabbdom-to-html": "^3.2.0",
-    "switch-path": "^1.2.0"
+    "switch-path": "^1.2.0",
+    "typescript": "^4.0.2"
   },
   "author": "Pierre Chabiland",
   "license": "MIT"
